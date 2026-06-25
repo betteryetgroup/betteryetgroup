@@ -35,7 +35,7 @@
   .nav-logo { display: flex; align-items: center; gap: 12px; min-width: 0; flex: 1; }
   .nav-logo img { height: 64px; width: auto; display: block; flex-shrink: 0; }
   .nav-logo-text { display: flex; flex-direction: column; min-width: 0; }
-  .nav-logo-name { font-family: Georgia, serif; font-size: 34px; color: #1a1a1a; line-height: 0.95; letter-spacing: 0.3px; word-break: break-word; }
+  .nav-logo-name { font-family: Georgia, serif; font-size: 34px; color: #1a1a1a; line-height: 0.95; letter-spacing: 0.3px; white-space: nowrap; }
   .nav-logo-tag { display: none; }
   .nav-links { display: flex; gap: 20px; align-items: center; flex-wrap: wrap; justify-content: flex-end; }
   .nav-links a { text-decoration: none; color: #444; font-size: 14px; white-space: nowrap; }
@@ -175,10 +175,12 @@
       flex-wrap: nowrap;
     }
     .nav-logo {
-      gap: 10px;
+      gap: 8px;
+      flex-shrink: 1;
+      min-width: 0;
     }
-    .nav-logo img { height: 46px; }
-    .nav-logo-name { font-size: 20px; line-height: 1; }
+    .nav-logo img { height: 40px; }
+    .nav-logo-name { font-size: 16px; line-height: 1; }
     .nav-links {
       gap: 10px;
       flex-wrap: nowrap;
@@ -274,7 +276,7 @@
 <section class="hero">
   <div class="hero-inner">
     <div class="hero-eyebrow">Strategic Finance for Growing Businesses</div>
-    <h1>We build finance functions that help<br><span>you make better decisions faster</span></h1>
+    <h1>We build finance functions that help <br><span>you make better decisions faster</span></h1>
     <p class="hero-sub">Better Yet Group makes sure every client is better off than when they started with us. </p>
     <div class="hero-btns">
       <a href="https://betteryetgroup1.odoo.com/book/meeting" class="btn-primary">Book a Call</a>
