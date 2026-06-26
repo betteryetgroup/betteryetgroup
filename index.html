@@ -176,17 +176,16 @@
     }
     .nav-logo {
       gap: 8px;
-      flex-shrink: 1;
-      min-width: 0;
+      flex-shrink: 0;
     }
-    .nav-logo img { height: 40px; }
-    .nav-logo-name { font-size: 16px; line-height: 1; }
+    .nav-logo img { height: 38px; }
+    .nav-logo-text { display: none; }
     .nav-links {
-      gap: 10px;
+      gap: 14px;
       flex-wrap: nowrap;
     }
-    .nav-links a { font-size: 12px; }
-    .nav-cta { padding: 8px 12px; font-size: 12px; }
+    .nav-links a { font-size: 13px; white-space: nowrap; }
+    .nav-cta { padding: 8px 12px; font-size: 12px; white-space: nowrap; }
 
     .hero { padding: 2.5rem 1rem 2rem; }
     .hero-eyebrow { font-size: 10px; letter-spacing: 2px; }
@@ -252,7 +251,9 @@
     nav {
       padding: 0.75rem 0.875rem;
     }
-    .nav-logo-name { font-size: 16px; }
+    .nav-logo img { height: 34px; }
+    .nav-links { gap: 12px; }
+    .nav-links a { font-size: 12px; }
     .nav-cta { padding: 7px 10px; font-size: 11px; }
 
     .hero h1 { font-size: 26px; }
